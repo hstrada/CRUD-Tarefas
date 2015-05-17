@@ -31,14 +31,14 @@ CREATE TABLE tarefas (
 	,primary key (id));
 ```
 
-## Criar a tabela de usuarios
+## Criar a tabela de usuários
 ```
 CREATE TABLE usuarios (
 	login VARCHAR(255)
 	,senha VARCHAR(255));
 ```
 
-## Inserir usuarios para a autenticação no sistema
+## Inserir usuários para a autenticação no sistema
 ```
 INSERT INTO usuarios VALUES ('admin', '1234');
 ```
