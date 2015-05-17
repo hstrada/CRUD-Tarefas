@@ -12,6 +12,7 @@ mysql -u root -p
 password: ******
 
 CREATE DATABASE CRUDTarefas;
+
 USE CRUDTarefas;
 
 mysql> CREATE TABLE tarefas (
