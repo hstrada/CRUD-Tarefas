@@ -12,20 +12,19 @@ mysql -u root -p
 password: ******
 
 CREATE DATABASE CRUDTarefas;
-
 USE CRUDTarefas;
 
 mysql> CREATE TABLE tarefas (
-    -> id BIGINT NOT NULL AUTO_INCREMENT
-    -> ,descricao VARCHAR(255)
-    -> ,finalizado BOOLEAN
-    -> ,dataFinalizacao DATE
-    -> ,primary key (id));
+	-> id BIGINT NOT NULL AUTO_INCREMENT
+	-> ,descricao VARCHAR(255)
+	-> ,finalizado BOOLEAN
+	-> ,dataFinalizacao DATE
+	-> ,primary key (id));
 Query OK, 0 rows affected (0.96 sec)
 
 mysql> CREATE TABLE usuarios (
-    -> login VARCHAR(255)
-    -> ,senha VARCHAR(255));
+	-> login VARCHAR(255)
+	-> ,senha VARCHAR(255));
 Query OK, 0 rows affected (0.30 sec)
 
 mysql> INSERT INTO usuarios VALUES ('admin', '1234');
