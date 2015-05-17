@@ -7,25 +7,38 @@ Controle de tarefas com JSP, Spring MVC, JPA, Filtros e Autenticação baseado n
 Neste exemplo, a utilização é do banco de dados MySQL.
 
 Para utilização:
-
+```
 mysql -u root -p
 password: ******
+```
 
+## Criar o banco a ser utilizado neste exemplo
+```
 CREATE DATABASE CRUDTarefas;
+```
+## Colocá-lo em uso
+```
 USE CRUDTarefas;
+```
 
-mysql> CREATE TABLE tarefas (
-	-> id BIGINT NOT NULL AUTO_INCREMENT
-	-> ,descricao VARCHAR(255)
-	-> ,finalizado BOOLEAN
-	-> ,dataFinalizacao DATE
-	-> ,primary key (id));
-Query OK, 0 rows affected (0.96 sec)
+## Criar a tabela de tarefas
+```
+CREATE TABLE tarefas (
+	id BIGINT NOT NULL AUTO_INCREMENT
+	,descricao VARCHAR(255)
+	,finalizado BOOLEAN
+	,dataFinalizacao DATE
+	,primary key (id));
+```
 
-mysql> CREATE TABLE usuarios (
-	-> login VARCHAR(255)
-	-> ,senha VARCHAR(255));
-Query OK, 0 rows affected (0.30 sec)
+## Criar a tabela de usuarios
+```
+CREATE TABLE usuarios (
+	login VARCHAR(255)
+	,senha VARCHAR(255));
+```
 
-mysql> INSERT INTO usuarios VALUES ('admin', '1234');
-Query OK, 1 row affected (0.24 sec)
+## Inserir usuarios para a autenticação no sistema
+```
+INSERT INTO usuarios VALUES ('admin', '1234');
+```
